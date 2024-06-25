@@ -1,0 +1,32 @@
+class q11{
+    static void pattern1(int N)
+ {
+    int start = 1;
+     // This is the outer loop which will loop for the rows.
+     for (int i = 0; i < N; i++)
+     {
+        if (i % 2 == 0) start = 1;
+        else start = 0;
+         // This is the inner loop which here, loops for the columns
+         // as we have to print a rectangular pattern.
+         for (int j = 0; j < i+1; j++)
+         {
+             System.out.print(start);
+             start = 1 - start;
+         }
+ 
+          // As soon as N stars are printed, we move to the
+         // next row and give a line break otherwise all stars
+         // would get printed in 1 line.
+         System.out.println();
+     }
+ }
+ 
+     public static void main(String[] args) {
+         
+         // Here, we have taken the value of N as 5.
+         // We can also take input from the user.
+         int N = 5;
+         pattern1(N);
+     }
+ }
