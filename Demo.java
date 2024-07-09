@@ -4,6 +4,6 @@ public class Demo {
     //to not create its object as it is the starting point we use static 
     public static void main(String[] args) {
         //String[] args is the command line arguments whatever you pass in the terminal while running will be stored their
-        System.out.println("Farhan Jaffer 2105714");
+        System.out.println("Farhan Jaffer");
     }
 }
